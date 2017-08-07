@@ -1,6 +1,6 @@
 # Documentação
 
-# Todos os software criado para o projeto minha cidade:
+# Todos os softwares criado para o projeto minha cidade:
 
 ### Crawler
 O software que tem a função de explorar o portal da transparência de João Pessoa e abstrair as informações
