@@ -1,0 +1,31 @@
+version: "2"
+services:
+  frontend:
+    image: abiosoft/caddy
+    volumes:
+      - ./frontend/:/srv/frontend:ro
+      - ./minha-cidade-web/:/srv/minha-cidade-web:ro
+      - ./caddy/Caddyfile:/etc/Caddyfile:ro    
+      - ./caddy/.caddy:/root/.caddy
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - backend
+  mongodb:
+    image: mongo
+  backend:
+    build: ./backend
+    environment:
+      - BACKEND_MONGO_CONNECTION_STRING=mongodb://mongodb:27017
+      - BACKEND_REVERSE_PROXY=true
+    depends_on:
+      - mongodb
+      - crawler
+  crawler:
+    build: ./crawler
+    environment:
+      - CRAWLER_MONGO_CONNECTION_STRING=mongodb://mongodb:27017
+    depends_on:
+      - mongodb
+

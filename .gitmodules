@@ -1,0 +1,12 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/minha-cidade/backend
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/minha-cidade/frontend
+[submodule "minha-cidade-web"]
+	path = minha-cidade-web
+	url = https://github.com/minha-cidade/minha-cidade-web
+[submodule "crawler"]
+	path = crawler
+	url = https://github.com/minha-cidade/crawler

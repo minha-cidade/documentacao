@@ -1,0 +1,18 @@
+# Coloque aqui o nome do seu domínio, caso tenha um
+localhost
+
+# Frontend
+/ {
+	root /src/front-end
+}
+
+# Web
+/web/ {
+	root /src/minha-cidade-web
+}
+
+# Api
+proxy /api/ http://backend:8080/ {
+	transparent
+}
+
