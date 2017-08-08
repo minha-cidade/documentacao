@@ -29,13 +29,16 @@ exatamente como está no nosso servidor ;)
 
 1. Clone esse repositório com as dependências de submódulo:
 
-    $ git clone --recursive https://github.com/minha-cidade/minha-cidade.git
-    $ cd minha-cidade
-
+```shell
+$ git clone --recursive https://github.com/minha-cidade/minha-cidade.git
+$ cd minha-cidade
+```
+    
 2. Inicie o docker-compose
 
-	$ # adicione a flag '-d' caso queira que rode em nodo daemon
-    $ sudo docker-compose up 
+```shell
+$ sudo docker-compose up # adicione a flag '-d' caso queira que rode em nodo daemon
+```
 
 O comando acima demorará alguns minutos, mas assim que terminar você terá o backend
 rodando com sucesso! Basta acessar http://localhost/ para ver a landing page
