@@ -1,15 +1,20 @@
 # Coloque aqui o nome do seu domínio, caso tenha um
-localhost
+localhost:80
+
+root /srv
 
 # Frontend
-/ {
-	root /src/front-end
+rewrite / {
+	if {uri} not_starts_with /web
+	to /frontend/{uri}
 }
 
 # Web
-/web/ {
-	root /src/minha-cidade-web
+rewrite /web/ {
+	r (.*)
+	to /minha-cidade-web/app/{1}
 }
+
 
 # Api
 proxy /api/ http://backend:8080/ {
