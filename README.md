@@ -6,7 +6,7 @@ Minha Cidade é uma plataforma para análise de dados públicos extraidos das tr
 
 ## Softwares
 
-### [Frontend](https://github.com/minha-cidade/frontend)
+### [Landing page](https://github.com/minha-cidade/frontend)
 Landing page que descreve a plataforma Minha Cidade ao usuário, mostra informaçes interessantes sobre dados públicos e oferece links para download do aplicativo.
 
 ### [Crawler](https://github.com/minha-cidade/crawler)
@@ -18,10 +18,10 @@ O Backend Minha Cidade expõe uma API de fácil acesso aos dados coletados pelo 
 ### [Documentação da API](https://minha-cidade.github.io/developer/)
  Criamos uma API afim de disponibilizar esses dados de forma mais fácil para que futuros desenvolvedores posam criar aplicações com esses dados. acessem o site e veja a documentação completa.
  
-### [APP Minha Cidade](https://github.com/minha-cidade/app-movel-hibrido)
+### [APP - Movel](https://github.com/minha-cidade/app-movel-hibrido)
 Aplicativo móvel híbrido Minha Cidade, desenvolvido com o framework ionic v3.4.0. Utiliza dos dados coletados pelo Crawler e fornecidos pela API Backend
 
-### [APP Web](https://github.com/minha-cidade/minha-cidade-web)
+### [APP - Web](https://github.com/minha-cidade/minha-cidade-web)
 Aplicação web Minha Cidade, desenvolvido com o framework Angular.js. Utiliza dos dados coletados pelo Crawler e fornecidos pela API Backend
 
  
