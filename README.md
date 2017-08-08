@@ -1,34 +1,19 @@
-# Documentação
+# Minha Cidade
+## O que é?
+Você entende que é importante todos os cidadãos entenderem como a gestão municipal investe nas áreas essenciais como saúde, educação, segurança e outras? Pois é, pensando nessa importância, criamos o Minha Cidade!
 
-# Todos os softwares criado para o projeto minha cidade:
+A ideia veio por parte de Josué Paiva Benardino, um dos integrantes da equipe que criou e desenvolveu o Minha Cidade, que foi aprimorada e implementada por ele e pelos demais participantes da equipe. O processo de desenvolvimento se iniciou durante a primeira fase da maratona de programação [Hackfest 2017](http://hackfest.com.br/), chegando à fase final como um dos 10 melhores projetos. Promovida pelo Ministério Público da Paraíba (MPPB) em parceria com a Rede Paraibana de Comunicação com a Controladoria Geral da União (CGU), com o Tribunal de Contas do Estado da Paraíba (TCE) e outras instituições, a maratona ocorreu durante os dias 9 e 11 de Junho de 2017, com o objetivo de envolver a sociedade no combate à corrupção e a melhora dos serviços públicos por meio do desenvolvimento de soluções tecnológicas.
 
-### Crawler
-O software que tem a função de explorar o portal da transparência de João Pessoa e abstrair as informações
+## Softwares
 
-  
-  ## Building do código Crawler
-Na pasta do repositório, execute o seguinte comando para criar uma imagem docker
-com o Crawler:
+### [Frontend](https://github.com/minha-cidade/frontend)
+Landing page que descreve a plataforma Minha Cidade ao usuário, mostra informaçes interessantes sobre dados públicos e oferece links para download do aplicativo.
 
-    $ docker build -t crawler .
+### [Crawler](https://github.com/minha-cidade/crawler)
+O Crawler tem a função de periodicamente baixar o banco de dados CSV da Transparência de João Pessoa e armazenar seu conteúdo no banco de dados da Minha Cidade, para que depois possa ser enviado pela API Backend.
 
-Depois de criado a imagem, execute o seguinte comando para executar a aplicação
-de forma interativa:
-
-    $ docker run -it --name crawler
-    
-    
-### APP minha cidade
-Aplicativo móvel híbrido Minha Cidade desenvolvido com framework ionic v3.4.0 Edit Add topics
-
- ## Building do código APP
-
-1 - Installar Ionic
-
-    $ npm install -g cordova ionic
-    $ ionic start myBlank blank
-    
-2 - Baixar o repositório 
-
-    $ git clone https://github.com/ionic-team/ionic2-app-base.git
-    
+### [Backend](https://github.com/minha-cidade/backend)
+O Backend Minha Cidade expõe uma API de fácil acesso aos dados coletados pelo Crawler, provendo uma forma simples e eficiente de analisar dados públicos referentes às despesas municipais.
+       
+### [APP Minha Cidade](https://github.com/minha-cidade/app-movel-hibrido)
+Aplicativo móvel híbrido Minha Cidade, desenvolvido com framework ionic v3.4.0. Utiliza dos dados coletados pelo Crawler e fornecidos pela API Backend
