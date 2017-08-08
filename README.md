@@ -15,12 +15,17 @@ O Crawler tem a função de periodicamente baixar o banco de dados CSV da Transp
 ### [Backend](https://github.com/minha-cidade/backend)
 O Backend Minha Cidade expõe uma API de fácil acesso aos dados coletados pelo Crawler, provendo uma forma simples e eficiente de analisar dados públicos referentes às despesas municipais.
 
+### [Documentação da API](https://minha-cidade.github.io/developer/)
+ Criamos uma API afim de disponibilizar esses dados de forma mais fácil para que futuros desenvolvedores posam criar aplicações com esses dados. acessem o site e veja a documentação completa.
+ 
 ### [APP Minha Cidade](https://github.com/minha-cidade/app-movel-hibrido)
 Aplicativo móvel híbrido Minha Cidade, desenvolvido com o framework ionic v3.4.0. Utiliza dos dados coletados pelo Crawler e fornecidos pela API Backend
 
 ### [APP Web](https://github.com/minha-cidade/minha-cidade-web)
 Aplicação web Minha Cidade, desenvolvido com o framework Angular.js. Utiliza dos dados coletados pelo Crawler e fornecidos pela API Backend
 
+ 
+ 
 ## Instalação
 Uma vez com o [Docker instalado](https://docs.docker.com/engine/installation/)
 em seu servidor, o processo de instalação é simples: fizemos um arquivo
@@ -29,13 +34,16 @@ exatamente como está no nosso servidor ;)
 
 1. Clone esse repositório com as dependências de submódulo:
 
-    $ git clone --recursive https://github.com/minha-cidade/minha-cidade.git
-    $ cd minha-cidade
-
+```shell
+$ git clone --recursive https://github.com/minha-cidade/minha-cidade.git
+$ cd minha-cidade
+```
+    
 2. Inicie o docker-compose
 
-	$ # adicione a flag '-d' caso queira que rode em nodo daemon
-    $ sudo docker-compose up 
+```shell
+$ sudo docker-compose up # adicione a flag '-d' caso queira que rode em nodo daemon
+```
 
 O comando acima demorará alguns minutos, mas assim que terminar você terá o backend
 rodando com sucesso! Basta acessar http://localhost/ para ver a landing page
