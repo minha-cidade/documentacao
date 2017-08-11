@@ -1,5 +1,5 @@
 # Coloque aqui o nome do seu domínio, caso tenha um
-localhost:80
+minhacidade.top, www.minhacidade.top
 
 root /srv
 
@@ -13,7 +13,7 @@ rewrite / {
 # Web
 rewrite /web/ {
 	r (.*)
-	to /minha-cidade-web/app/{1}
+	to /minha-cidade-web/{1}
 }
 
 

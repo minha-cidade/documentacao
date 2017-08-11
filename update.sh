@@ -1,4 +1,7 @@
-git pull frontend
-git pull backend
-git pull crawker
-git pull minha-cidade-web
+#!/bin/bash
+for repo in frontend backend crawler minha-cidade-web
+do
+   cd $repo
+   git pull origin master
+   cd ..
+done
