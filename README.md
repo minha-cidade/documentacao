@@ -49,7 +49,7 @@ $ ./install.sh
 3. Inicie o docker-compose
 
 ```shell
-$ sudo docker-compose up # adicione a flag '-d' caso queira que rode em nodo daemon
+$ sudo docker-compose up # adicione a flag '-d' caso queira que rode em modo daemon
 ```
 
 O comando acima demorará alguns minutos, mas assim que terminar você terá o backend
