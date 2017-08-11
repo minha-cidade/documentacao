@@ -29,17 +29,24 @@ Aplicação web Minha Cidade, desenvolvido com o framework Angular.js. Utiliza d
 ## Instalação
 Uma vez com o [Docker instalado](https://docs.docker.com/engine/installation/)
 em seu servidor, o processo de instalação é simples: fizemos um arquivo
-`docker-compose.yml` que, com dois comandos, terá todo o backend rodando
+`docker-compose.yml` que, com esses simpels comandos, terá todo o backend rodando
 exatamente como está no nosso servidor ;)
 
-1. Clone esse repositório com as dependências de submódulo:
+1. Clone esse repositório e entre em seu diretório
 
 ```shell
-$ git clone --recursive https://github.com/minha-cidade/minha-cidade.git
+$ git clone https://github.com/minha-cidade/minha-cidade.git
 $ cd minha-cidade
 ```
+
+2. Rode o script `install.sh` que baixará os outros repositórios necessários
+para executar o projeto
+
+```shell
+$ ./install.sh
+```
     
-2. Inicie o docker-compose
+3. Inicie o docker-compose
 
 ```shell
 $ sudo docker-compose up # adicione a flag '-d' caso queira que rode em nodo daemon

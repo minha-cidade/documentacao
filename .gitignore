@@ -1,1 +1,5 @@
 caddy/.caddy
+frontend/
+backend/
+minha-cidade-web/
+crawler/
