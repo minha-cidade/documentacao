@@ -6,6 +6,7 @@ root /srv
 # Frontend
 rewrite / {
 	if {uri} not_starts_with /web
+	if {uri} not_starts_with /api
 	to /frontend/{uri}
 }
 
