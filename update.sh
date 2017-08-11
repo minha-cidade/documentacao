@@ -1,3 +1,4 @@
+#!/bin/sh
 git pull frontend
 git pull backend
 git pull crawker
